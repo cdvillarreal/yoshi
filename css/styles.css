@@ -94,16 +94,6 @@ body {
     translate: 60px 55px;
 }
 
-.eyes {
-    width: 300px;
-    height: 190px;
-    align-items: center;
-    display: flex;
-    align-self: start;
-    translate: -80px;
-    z-index: 2;
-}
-
 .chimp {
     width: 300px;
     height: 300px;
@@ -134,6 +124,23 @@ body {
     border: var(--borders);
     border-radius: 50%;
     translate: 5px 20px;
+    transition: ease .3s;
+}
+
+.tongue:hover {
+    width: 150px;
+    translate: -30px 20px;
+    transform: skew(-30deg, -20deg);
+}
+
+.eyes {
+    width: 300px;
+    height: 190px;
+    align-items: center;
+    display: flex;
+    align-self: start;
+    translate: -80px;
+    z-index: 2;
 }
 
 .left-eye {
@@ -206,6 +213,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 
 .left-shine {
